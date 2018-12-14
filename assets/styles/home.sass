@@ -1,21 +1,13 @@
-.full-page
-    height: 100vh
-    width: 100vw
-
-#home-bg
-    width: 90%
-    position: absolute
-    top: 60
-    left: 0
-    z-index: -1
-
-#home-illus
-    height: 30%
-    position: absolute
-    bottom: 40%
-    right: 30px
-
 .home
+    height: 80%
+    background: linear-gradient(to right, $primary-color, $secondary-color)
+
+    +larger-than-tablet
+        background: none
+        height: 70%
+        margin-bottom: 100px
+
+
     .container
         color: white !important
         padding-top: 10%
@@ -23,5 +15,32 @@
         h1
             font-weight: bold
 
-        h2
+            +smaller-than-desktop
+                font-size: 2rem
+
+        h3
             font-weight: 400
+
+            +smaller-than-desktop
+                font-size: 1.3rem
+
+#home-bg
+    position: absolute
+    display: none
+
+    +larger-than-tablet
+        display: block
+        height: 100%
+        height: auto
+        top: 60
+        left: -10%
+        z-index: -1
+
+#home-illus
+    height: 250px
+
+    +larger-than-tablet
+        height: 30%
+        position: absolute
+        top: 40%
+        right: 30px

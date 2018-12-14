@@ -1,13 +1,17 @@
 .navbar
     .navbar-brand
         img
+            height: 80px
+            width: auto
 
     .navbar-collapse
         .navbar-nav
+            .active
+                .nav-link
+                    color: $primary-color !important
+
             .nav-item
                 .nav-link
-                    font-weight: 600
-
                     &:hover
                         color: $primary-color
                         transition: color 0.3s ease-in-out

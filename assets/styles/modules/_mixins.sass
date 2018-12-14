@@ -19,3 +19,11 @@
 =larger-than-desktop
     @media (min-width: #{$desktop-width})
         @content
+
+=smaller-than-tablet
+    @media (max-width: #{$tablet-width})
+        @content
+
+=smaller-than-desktop
+    @media (max-width: #{$desktop-width})
+        @content
