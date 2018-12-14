@@ -3,7 +3,7 @@
  */
 
 // Load application styles
-import 'styles/index.sass';
+import '../assets/styles/index.sass';
 import 'bootstrap';
 // ================================
 // START YOUR APP HERE
@@ -18,3 +18,6 @@ import '../assets/images/home_illus.svg';
 import '../assets/images/about_us_illus.svg';
 import '../assets/images/about_us_illus_2.svg';
 import '../assets/images/services_illus.svg';
+import '../assets/images/contact_bg.svg';
+import '../assets/images/contact_illus_1.svg';
+import '../assets/images/contact_illus_2.svg';
