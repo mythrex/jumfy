@@ -17,3 +17,4 @@ import '../assets/images/home_bg.svg';
 import '../assets/images/home_illus.svg';
 import '../assets/images/about_us_illus.svg';
 import '../assets/images/about_us_illus_2.svg';
+import '../assets/images/services_illus.svg';
