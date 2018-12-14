@@ -1,0 +1,21 @@
+@import vars
+
+=tablet
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px})
+        @content
+
+=desktop
+    @media (min-width: #{$desktop-width}) and (max-width: #{$large-desktop-width - 1px})
+        @content
+
+=large-desktop
+    @media (min-width: #{$large-desktop-width})
+        @content
+
+=larger-than-tablet
+    @media (min-width: #{$tablet-width})
+        @content
+
+=larger-than-desktop
+    @media (min-width: #{$desktop-width})
+        @content
