@@ -1,15 +1,26 @@
 .contact-us
     position: relative
+    height: auto
+    padding-top: 30px
+    padding-bottom: 30px
+
+    +larger-than-tablet
+        height: 100%
+
 
     h1
         margin-bottom: 100px
 
 #contact-bg
-    position: absolute
-    bottom: 0
-    left: 0
-    width: 100%
-    z-index: -1
+    display: none
+
+    +larger-than-tablet
+        display: inline-block
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        z-index: -1
 
 #btn-social
     border-radius: 25px
@@ -17,21 +28,46 @@
     .btn
         background: transparent
         border: none
-        font-size: 1.5rem
-        padding: 20px
+        font-size: 1rem
+
+        +larger-than-tablet
+            font-size: 1.5rem
+
 
         &:hover
             background: transparent
 
 #contact-illus-1
-    height: 256px
+    height: 150px
+    display: none
+
+    +larger-than-tablet
+        display: inline-block
+        height: 200px
+
+
+    +larger-than-desktop
+        height: 250px
+
+
     width: auto
     position: absolute
     right: 40%
     bottom: 10%
 
 #contact-illus-2
-    height: 256px
+    height: 150px
+    display: none
+
+    +larger-than-tablet
+        display: inline-block
+        height: 200px
+
+
+    +larger-than-desktop
+        height: 250px
+
+
     width: auto
     position: absolute
     right: 10%
