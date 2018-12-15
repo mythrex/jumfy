@@ -14,6 +14,12 @@
     #btn-social
         margin: auto
 
+    #location
+        color: $primary-color
+
+        &:hover
+            color: darken($primary-color, 10%)
+
 #contact-bg
     display: none
 
@@ -41,37 +47,39 @@
             background: transparent
 
 #contact-illus-1
-    height: 150px
-    display: none
-
-    +larger-than-tablet
-        display: inline-block
-        height: 200px
-
-
-    +larger-than-desktop
-        height: 250px
-
-
-    width: auto
-    position: absolute
-    right: 40%
-    bottom: 10%
-
-#contact-illus-2
-    height: 150px
-    display: none
-
-    +larger-than-tablet
-        display: inline-block
-        height: 200px
-
-
-    +larger-than-desktop
-        height: 250px
-
-
+    height: 92px
     width: auto
     position: absolute
     right: 10%
     bottom: 40%
+    z-index: -1
+
+    +larger-than-tablet
+        height: 150px
+        right: 40%
+        bottom: 10%
+        z-index: 10
+
+
+    +larger-than-desktop
+        height: 250px
+
+#contact-illus-2
+    height: 92px
+    width: auto
+    position: absolute
+    left: 5%
+    bottom: 40%
+    z-index: -1
+
+    +larger-than-tablet
+        left: 60%
+        right: 10%
+        bottom: 40%
+        display: inline-block
+        height: 150px
+        z-index: 10
+
+
+    +larger-than-desktop
+        height: 250px
