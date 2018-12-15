@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<title><%= htmlWebpackPlugin.options.title %></title>
+		<title>Jufmy</title>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	</head>
 	<body>
@@ -47,7 +47,22 @@
 							We help organise your <br />
 							marketing so you can get <br />better results
 						</h3>
-						<button class="btn btn-primary">Get Started!</button>
+
+						<script src="https://form.jotform.me/cardforms/feedbackEmbedButton.min.js"></script>
+						<script>
+						new JF_FeedbackEmbedButton({
+							
+							buttonText: "Contact",
+							buttonFontColor: "#FFFFFF",
+							buttonBackgroundColor: "#007FEF",
+							buttonSide: "Bottom",
+							buttonAlign: "Right",
+							buttonIcon: "default",
+							formId: 83485295130459
+						});
+						</script>
+    
+						<a href="https://form.jotform.me/83485295130459" class="btn btn-primary" target="_vblank">Get Started!</a>
 					</div>
 				</div>
 			</div>
@@ -63,10 +78,10 @@
 		<section id="vision">
 			<div class="container">
 				<div class="row">
-					<div class="col md-6 sm-12 d-flex">
+					<div class="col-md-6 col-sm-12 d-flex">
 							<i class="far fa-lightbulb"></i>
 					</div>
-					<div class="col md-6 sm-12">
+					<div class="col-md-6 col-sm-12">
 						<h1 class="text-primary">Our Vision</h1>
 						<p class="lead">Our aim is to transform unorganized marketing 
 							sector to the organized one ,
